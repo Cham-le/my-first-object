@@ -28,7 +28,7 @@ public class LoginView {
             user.setName(input.nextLine());
             System.out.print("Password: ");
             user.setPassword(input.nextLine());
-//            wait();
+//          wait();
             input.close();
         } catch (Exception e) {
             System.out.println(e);
