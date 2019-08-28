@@ -22,8 +22,8 @@ public class LoginView {
         System.out.println(smg);
     }
     public void getUserInfo(){
+        Scanner input = new Scanner(System.in);
         try {
-            Scanner input = new Scanner(System.in);
             System.out.print("Username: ");
             user.setName(input.nextLine());
             System.out.print("Password: ");
@@ -32,6 +32,7 @@ public class LoginView {
             input.close();
         } catch (Exception e) {
             System.out.println(e);
+            input.close();
         }
     }
 }
